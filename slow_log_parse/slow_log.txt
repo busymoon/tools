@@ -1,0 +1,31 @@
+Time                 Id Command    Argument
+# Time: 140624  0:31:51
+# User@Host: pg_sale_w[pg_sale_w] @  [10.26.17.33]
+# Query_time: 1.579927  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+use pg_sale_beijing;
+SET timestamp=1403541111;
+rollback;
+# Time: 140624  1:01:33
+# User@Host: pg_sale_w[pg_sale_w] @  [10.36.53.35]
+# Query_time: 2.786823  Lock_time: 0.000054 Rows_sent: 0  Rows_examined: 1
+use pg_sale_shanghai;
+SET timestamp=1403542893;
+update tb_assign_stat     set assign_date = '2014-06-24 01:00:11',       posid = 54920,       audit_num = 111,       follow_num = 0     where id = 1403542811561878152;
+# Time: 140624  1:29:21
+# User@Host: pg_sale_w[pg_sale_w] @  [10.23.250.212]
+# Query_time: 2.624786  Lock_time: 0.000053 Rows_sent: 0  Rows_examined: 1
+use pg_sale_shanghai;
+SET timestamp=1403544561;
+update tb_assign_stat     set assign_date = '2014-06-24 01:00:11',       posid = 54920,       audit_num = 2792,       follow_num = 0     where id = 1403542811561878152;
+# Time: 140624  2:30:29
+# User@Host: pg_hint_w[pg_hint_w] @  [10.36.46.31]
+# Query_time: 1.526673  Lock_time: 0.000178 Rows_sent: 0  Rows_examined: 0
+use pg_hint_beijing;
+SET timestamp=1403548229;
+insert into tb_hint_operate_log  
+# Time: 140624  1:28:25
+# User@Host: pg_hint_w[pg_hint_w] @  [10.36.45.22]
+# Query_time: 1.088563  Lock_time: 0.000094 Rows_sent: 0  Rows_examined: 0
+use pg_hint_beijing;
+SET timestamp=1403544505;
+insert into tb_hint_operate_log      ( add_ucid,                       add_time,                       upd_ucid,                       upd_time,                       hint_id,                       hint_type,                       hint_name,                       site_info,                       trade_info,                       contact_info,                       modi_reason,                       modi_ucname )       values ( -1,                       '2014-06-24 01:28:24',                       -1,                       '2014-06-24 01:28:24',                       1403544504558897900,                       0,                       '蓝天家园经贸公司海淀分公�,                       '',                       '教育培训 - 高教自�,                       '王伟�10-88457252�,                       '',                       '' );
